@@ -1,4 +1,7 @@
 <?php
+
+namespace Transliteration;
+
 /**
  *    Static Class for Transliteration
  *  Simply encapsulates the drupal transliteration module : http://drupal.org/project/transliteration  version 7.x-3.1
@@ -229,8 +232,8 @@ class JTransliteration
 
 		if (!isset($langcode))
 		{
-			global $language;
-			$langcode = $language->language;
+//			global $language;
+//			$langcode = $language->language;
 		}
 
 		$bank = $ord >> 8;
